@@ -1,20 +1,206 @@
-@media (max-width: 1200px) {
-    
-}
-@media (max-width: 991px) {
-
-}
-@media (max-width: 767px) {
+@media (max-width: 886px) {
     .edge__icons {
         margin: 60px 7px;
     }
     .promo {
         padding: 5px;
+        &__header { 
+            font-size: 40px;
+        }
+        &__subheader { 
+            font-size: 19px;
+        }
     }
-    .consultation {
-        padding: 200px;
+    .carousel { 
+        .slick-next { 
+            right: 150px;
+            top: -5%;
+        }
+        .slick-prev {
+            left: 150px;
+            top: -5%;
+        }
     }
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
+    .feed-form { 
+        margin: 20px 0 0 20px;
+    }
+    .title_left  {
+
+        font-size: 26px;
+    }
+    .consultation__descr { 
+
+        font-size: 18px;
+    }
+    .slick-dots { 
+        display: flex;
+        justify-content: space-around;
+        font-size: 30px;
+        color: $main-color;
+        button { 
+            display: none;
+        }
+    }
+    .carousel{
+        padding: 10px 0;
+        &__inner { 
+            width: 100%;
+            img { 
+                width: 100%;
+            }
+        }
+    }
+    
+    .header { 
+        &__logo { 
+            width: 220px;
+        }
+        &__official { 
+            font-size: 11px;
+            span { 
+                font-size: 16px;
+            }
+        }
+        &__phone {
+            font-size: 16px;
+
+        }
+        button { 
+            width: 138px;
+        }
+    }
+    .promo { 
+        &__icons { 
+            width: 315px;
+        }
+        &__link { 
+            font-size: 15px;
+        }
+    }
+    .button.button_main { 
+        width: 220px;
+        font-size: 13px;
+    }
+    .edge{ 
+        padding: 10px 0 0 0;
+        height: 410px;
+        &__icons { 
+            margin: 1px;
+            font-size: 12px;
+        }
+        &__subheader { 
+            line-height: 17px;
+            font-size: 17px;
+        }
+    }
+    .catalog { 
+        &__tabs {  
+            flex-direction: column;
+            margin-top: 20px;
+        }
+        &__tab { 
+            margin-top: 10px;
+        }
+        &__content { 
+            margin-top: 40px;
+        }
+        &-item { 
+            width: 280px;
+            padding: 10px 10px 10px 20px;
+        }
+    }
+    .reviews { 
+        &__container { 
+            padding: 10px;
+        }
+        &__descrt-main { 
+            font-size: 13px;
+            line-height: 14px;
+        }
+    }
+}
+@media (max-width: 528px) { 
+    .header { 
+        &__logo { 
+            width: 170px;
+        }
+        &__official { 
+            font-size: 9px;
+            span { 
+                font-size: 10px;
+            }
+        }
+        &__phone {
+            font-size: 13px;
+
+        }
+        button { 
+            width: 120px;
+            font-size: 10px;
+        }
+    }
+    .promo { 
+        &__icons { 
+            width: 315px;
+        }
+        &__link { 
+            font-size: 13px;
+        }
+        &__header { 
+            font-size: 34px;
+        }
+        &__subheader { 
+            margin-top: 0;
+            font-size: 18px;
+        }
+    }
+    .button.button_main { 
+        width: 200px;
+        font-size: 13px;
+    }
+    .footer {
+        &__info { 
+            width: 320px;
+        }
+        &__social-item { 
+            margin: 0 4px; 
+            width: 50px;
+            height: 50px;
+        }
+    }
+    .reviews { 
+        &__container { 
+            display: block;
+        }
+            img { 
+                display: block;
+                margin: 0 auto;
+            }
+        &__descrt-main { 
+            font-size: 13px;
+            line-height: 14px;
+        }
+    }
+    .edge {
+        &__subheader { 
+            font-size: 16px;
+            line-height: 16px;
+            margin: 0;
+        }
+        &__icons { 
+            font-size: 12px;
+            line-height: 13px;
+        }
+    }
+    .feed-form { 
+        margin: 20px 0 0 0;
+    }
+    .title.title_left { 
+        line-height: 30px;
+        font-size: 23px;
+    }
 
 }
+
