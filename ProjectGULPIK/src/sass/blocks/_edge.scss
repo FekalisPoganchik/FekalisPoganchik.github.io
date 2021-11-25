@@ -29,4 +29,15 @@
         color: #0D0D0D;
         margin: 35px 0 20px;
     }
+    &__icon { 
+        &_animated {
+            animation-name: heartbeat;
+            animation-duration: 5s;
+            animation-timing-function: ease;
+            animation-iteration-count: infinite;
+            &:hover { 
+                animation-play-state: paused;
+            }
+        }
+    }
 }   
