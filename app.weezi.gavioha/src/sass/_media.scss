@@ -1,14 +1,98 @@
-@media (max-width: 1600px){
-      .card{
+@media (max-width: 1884px){
+    .card{
+      &-line{
+        width: 1760px
+      }
+  }
+}
+@media (max-width: 1750px){
+    .card{
+      &-line{
+        width: 1680px
+      }
+  }
+}
+@media (max-width: 1660px){
+    .card{
+      &-line{
+        width: 1540px
+      }
+  }
+}
+@media (max-width: 1561px){
+    .card{
+      &-line{
+        width: 1345px
+      }
+  }
+}
+@media (max-width: 1444px){
+    .card{
         &-line{
-            min-width: 1430px
+            width: 1320px
         }
     }
 }
 @media (max-width: 1367px){
     .card{
         &-line{
-            min-width: 1277px
+            width: 1277px
         }
     }
+}
+@media (max-width: 1324px){
+    .card{
+        &-line{
+            width: 1220px
+        }
+    }
+}
+@media (max-width: 1250px){
+    .card{
+        &-line{
+            width: 1100px
+        }
+    }
+}
+@media (max-width: 1201px){
+    .card{
+        &-line{
+            width: 1060px
+        }
+        &-descr {
+            &-out {
+                font-size: 14px;
+            }
+        }
+        &-descr {
+            font-size: 14px;
+        }
+
+    }
+}
+@media (max-width: 1099px){
+    .card{
+        &-line{
+            width: 970px
+        }
+    }
+    .card-descr-out-colum-11{
+        font-size: 12px;
+    }
+}
+@media (max-width: 1025px){
+    .card{
+        &-line{
+            width: 910px
+        }
+        .card-descr-out-colum-4{
+            margin-bottom: 29px;
+        }
+        .card-descr-out-colum-8{
+            margin-bottom: 30px;
+        }
+    }
+}
+@media (max-width: 991px) {
+    
 }
