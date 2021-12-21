@@ -70,14 +70,28 @@
 
     }
 }
-@media (max-width: 1099px){
+@media (max-width: 1094px){
     .card{
         &-line{
             width: 970px
         }
     }
     .card-descr-out-colum-11{
-        font-size: 12px;
+        line-height: 1em;
+        margin-bottom: 43px;
+
+    }
+}
+@media (max-width: 1077px){
+    .card-descr-out-colum-11{
+        line-height: 1em;
+        margin-bottom: 33px;
+    }
+}
+@media (max-width: 1068px){
+    .card-descr-out-colum-11{
+        line-height: 1em;
+        margin-bottom: 19px;
     }
 }
 @media (max-width: 1025px){
@@ -94,5 +108,5 @@
     }
 }
 @media (max-width: 991px) {
-    
+
 }
