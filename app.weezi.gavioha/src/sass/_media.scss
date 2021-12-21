@@ -1,3 +1,10 @@
+@media (max-width: 1600px){
+      .card{
+        &-line{
+            min-width: 1430px
+        }
+    }
+}
 @media (max-width: 1367px){
     .card{
         &-line{
