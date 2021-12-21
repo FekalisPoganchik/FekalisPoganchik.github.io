@@ -1,63 +1,79 @@
-// let number = 5;
+'use strict';
 
-// console.log(4/0);
-
-// const persone = `Alex`;
-
-// const bool = false;
-
-// let und;
-// console.log(und);
-
-// const obj = { 
-//     name: `John`,
-//     age: 25,
-//     isMarried: false
-// };
-
-// // console.log(obj.name);
-// console.log(obj["name"]);
-
-// let arr = [`plum.png`, `orange.jpg`, 6, `apple.bmp`, {}, []];
-// console.log(arr[1]);
-// alert (`hello`);
-// const result = confirm(`Are you here ?`);
-// console.log(result);
-// const answer = +prompt(`Вам есть 18?`,`24`);
-// console.log(typeof(answer));
-// const ansewers = [];
-
-// ansewers[0] = prompt(`Как ваше имя ?`, ``);
-// ansewers[1] = prompt(`Как ваше фамилия ?`, ``);
-// ansewers[2] = prompt(`Сколько вам лет ?`, ``);
-
-// console.log(ansewers);
-
-// let incr = 10,
-//     decr = 10;
-
-// ++incr;
-// --decr;
-
-// console.log(incr);
-// console.log(decr);
-const answer = +prompt(`Сколько фильмов вы уже посмотрели ? `,``);
-let numberOfFilms = answer;
+let numberOfFilms;
 
 const personalMovieDB = { 
     cout: numberOfFilms,
     movies: {},
     actors: {},
     genres: [],
-    privat: false
+    privat: false,
+    howManyFilms: function() {
+    this.cout = prompt(`Сколько фильмов вы уже посмотрели ? `,``);
+    while (this.cout == '' || this.cout == null || isNaN(this.cout)) {
+        this.cout = prompt(`Сколько фильмов вы уже посмотрели ? `,``);
+        }
+    },
+    rememberMyFilms: function () {
+        for (let i = 0; i < 2; i++) {
+            const a = prompt(`Один из просмотренных фильмов ?`,``),
+                  b = prompt(`На сколько оцените его ?`,``);
+                if  (a != null && b != null && a.length > 0 && b.length > 0 && a.length < 50 && b.length < 50) {
+                    personalMovieDB.movies[a] = b;
+                    console.log ('Выполнено');
+                }else {
+                    i--;
+                    console.log('Откройте букву Л');
+                }
+        }
+    },
+    detectPersonalLevel: function () {
+        if (+personalMovieDB.cout < 10) { 
+            console.log ("Просмотрено довольно мало фильмов");
+        }else if (+personalMovieDB.cout >= 10 && +personalMovieDB.cout < 30) { 
+            console.log ("Вы классический зритель");
+        }else if (+personalMovieDB.cout >= 30) { 
+            console.log("Вы киноман");
+        }else { 
+            console.log("Ошибка");
+        }
+    },
+    writeYourGenres: function () {
+        for (let i = 1; i <= 3; i++) {
+            const genre = prompt(`Ваш любимый жанр под номером ${i}`);
+                if  (genre != null && genre.length > 0 && genre.length < 50) {
+                    personalMovieDB.genres[i - 1] = genre;
+                    console.log ('Выполнено');
+                }else {
+                    i--;
+                    console.log('Откройте букву Л');
+                }
+        }
+        this.genres.forEach (function (a, i) {
+            console.log(`Любимый жанр ${i + 1} - это ${a}`);
+        });   
+    },
+    showMyDB: function () { 
+        if (personalMovieDB.privat == false){ 
+            console.log (personalMovieDB);
+        }
+    },
+    toggleVisibleMyDB: function () {
+        this.privat ? this.privat = false : this.privat = true;
+    }
 };
 
-const a = prompt(`Один из просмотренных фильмов ?`,``),
-      b = prompt(`На сколько оцените его ?`,``),
-      c = prompt(`Один из просмотренных фильмов ?`,``),
-      d = prompt(`На сколько оцените его ?`,``);
+personalMovieDB.howManyFilms();
+personalMovieDB.rememberMyFilms();
+personalMovieDB.detectPersonalLevel();
+personalMovieDB.writeYourGenres();
+personalMovieDB.showMyDB();
+personalMovieDB.toggleVisibleMyDB();
 
-personalMovieDB.movies[a] = b;
-personalMovieDB.movies[c] = d;
-  
-console.log(personalMovieDB);
+
+
+
+
+
+
+
