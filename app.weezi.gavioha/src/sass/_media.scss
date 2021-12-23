@@ -176,3 +176,29 @@
         font-size: 40px;
     }
 }
+
+@media (max-width: 768px){
+    .card{
+        max-width: 327px;
+        max-height: 721px;
+        &-2{
+            max-height: 749px;
+        }
+        &-3{
+            max-height: 815px;
+        }
+        &-title{
+            padding-top:24px ;
+        }
+        &-descr{
+            &-mobile{
+                justify-content: center;
+                flex-direction: column;
+                &-right{
+                    padding: 32px 0 0 24px;
+                }
+            }
+
+        }
+    }
+}
