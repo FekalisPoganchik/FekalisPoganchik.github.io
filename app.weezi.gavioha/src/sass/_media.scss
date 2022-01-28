@@ -181,6 +181,11 @@
     .card{
         max-width: 327px;
         max-height: 721px;
+        &-text{
+            &-left{
+                padding: 20px 0 0 24px
+            }
+        }
         &-footer{
             padding: 30px 0;
         }
