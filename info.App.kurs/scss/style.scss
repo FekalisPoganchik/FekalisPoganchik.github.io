@@ -1,5 +1,41 @@
-.background { 
-    background: url(/image/Background.jpg) center (center/cover) no-repeat;
-    width: 100%;
-    min-height: 67em;
+* {
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Oswald', sans-serif;
+}
+.main-background { 
+    background: url(../image/Background.jpg) center (center/cover) no-repeat;
+    min-height: 100vh;
+}
+.menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px 0 10px;
+    &-logoTIU {
+        height: 71px;
+    }
+    &-wrap {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+    }
+    &-item {
+        display: flex;
+    }
+    &-link{
+        text-decoration: none;
+        color: #000;
+        font-size: 40px;
+        margin-left: 120px;
+        &:hover{
+            color: #1A3D90;
+            text-decoration: underline;
+        }
+    }
+}
+
+.timetable {
+    margin: 30px 60px 0px 60px;
+    background-color: rgba(234, 232, 233, 0.75);;
+    border: 1px solid #000000;
 }
