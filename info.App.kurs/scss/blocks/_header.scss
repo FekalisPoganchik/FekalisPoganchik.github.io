@@ -1,0 +1,27 @@
+.menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px 0 10px;
+    &-logoTIU {
+        height: 71px;
+    }
+    &-wrap {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+    }
+    &-item {
+        display: flex;
+    }
+    &-link{
+        text-decoration: none;
+        color: #000;
+        font-size: 40px;
+        margin-left: 120px;
+        &:hover{
+            color: $blue;
+            text-decoration: underline;
+        }
+    }
+}
