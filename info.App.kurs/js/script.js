@@ -6,37 +6,36 @@ const mainLink = document.querySelector('#mainbtn'),
 
 mainLink.addEventListener('click', (event) => {
     event.preventDefault();
-    if(main.classList.contains('show')){
-        tasks.classList.remove("show")
-        tasks.classList.add("hidden")
-    } else if (main.classList.contains('hidden')) {
+if (main.classList.contains('hidden')) {
+        tasksLink.classList.remove("linkDecoration")
+        mainLink.classList.add("linkDecoration")
         main.classList.add("show")
         main.classList.remove("hidden")
         tasks.classList.add("hidden")
         tasks.classList.remove("show")
     }  
-})
+});
+
 logoMainLink.addEventListener('click', (event) => {
     event.preventDefault();
-    if(main.classList.contains('show')){
-        tasks.classList.remove("show")
-        tasks.classList.add("hidden")
-    } else if (main.classList.contains('hidden')) {
+if (main.classList.contains('hidden')) {
+        tasksLink.classList.remove("linkDecoration")
+        mainLink.classList.add("linkDecoration")
         main.classList.add("show")
         main.classList.remove("hidden")
         tasks.classList.add("hidden")
         tasks.classList.remove("show")
     }
-})
+});
+
 tasksLink.addEventListener('click', (event) => {
     event.preventDefault();
-    if(tasks.classList.contains('show')){
-        main.classList.remove("show")
-        main.classList.add("hidden")
-    } else if (tasks.classList.contains('hidden')) {
+ if (tasks.classList.contains('hidden')) {
+        mainLink.classList.remove("linkDecoration")
+        tasksLink.classList.add("linkDecoration")
         tasks.classList.add("show")
         tasks.classList.remove("hidden")
         main.classList.add("hidden")
         main.classList.remove("show")
     }
-})
+});
