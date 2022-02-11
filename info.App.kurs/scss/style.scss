@@ -1,3 +1,9 @@
+.show {
+    display: block!important;
+}
+.hidden {
+    display: none!important;
+}
 * {
     font-family: 'Open Sans', sans-serif;
     font-family: 'Oswald', sans-serif;
@@ -11,3 +17,4 @@
 @import 'blocks/header';
 @import 'blocks/main';
 @import 'blocks/tasks';
+

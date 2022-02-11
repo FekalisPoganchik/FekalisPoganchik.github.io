@@ -12,18 +12,18 @@
   <body>
     <div class="main-background">
     <section class="menu">
-      <img src="image/Logo.png" alt="LOGO" class="menu-logo">
+      <a id="logomainbtn" href=""><img src="image/Logo.png" alt="LOGO" class="menu-logo"></a>
       <div class="menu-wrap">
-        <div class="menu-item"><a href="" class="menu-link">Главная</a></div>
-        <div class="menu-item"><a href="" class="menu-link">Задачи</a></div>
-        <div class="menu-item"><a href="" class="menu-link">Новости</a></div>
+        <div class="menu-item"><a href="" id="mainbtn" class="menu-link">Главная</a></div>
+        <div class="menu-item"><a href="" id="tasksbtn" class="menu-link">Задачи</a></div>
+        <!-- <div class="menu-item"><a href="" class="menu-link">Новости</a></div> -->
       </div>
       <a href="https://www.tyuiu.ru/"><img src="image/secLogo.png" alt="LOGO" class="menu-logoTIU"></a>
     </section>
-    <section class="timetable">
+    <section class="timetable show">
       <div id="table"></div>
     </section>
-    <section class="tasks">
+    <section class="tasks hidden">
       <div class="tasks-container">
         <div class="tasks-create">
           <div class="card text-dark bg-light mb-3">
@@ -87,6 +87,7 @@
               </div>
               <div class="card-create-descr">
                 Задача: Мы вынуждены отталкиваться от того, что семантический разбор внешних противодействий однозначно определяет каждого участника как
+                
               </div>
               <div class="card-btn">
                 <button class="card-btn-del">УДАЛИТЬ</button>
@@ -113,5 +114,6 @@
     </section>
     </div>
     <script type="text/javascript" src="js/bundle.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
   </body>
 </html>
