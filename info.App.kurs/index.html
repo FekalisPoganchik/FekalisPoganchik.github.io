@@ -29,82 +29,53 @@
           <div class="card text-dark bg-light mb-3">
             <div class="card-header">Создание</div>
             <div class="card-body">
-              <div class="card-create-name">
-                <h5 class="card-title">Название</h5>
-                <textarea class="tasks-input" type="text" rows="1"></textarea>
-              </div>
-              <div class="card-create-tasks">
-                <h5 class="card-title">Задача</h5>
-                <textarea class="tasks-input" rows="7"></textarea>
-              </div>
-              <div class="card-wrap">
-                <button class="card-wrap-name">ДОБАВИТЬ</button>
-              </div>
+                <form name="addTask">
+                  <h5 class="card-title">Название</h5>
+                  <input 
+                    type="text"
+                    name="title"
+                    id="title"
+                    class="tasks-input"
+                    rows="1"
+                  />
+                  <h5 class="card-title">Задача</h5>
+                  <textarea 
+                    type="text"
+                    name="body"
+                    id="body"
+                    class="tasks-input"
+                    rows="7"
+                  ></textarea>
+                  <div class="card-wrap">
+                    <button type="submit" class="card-wrap-name">
+                      ДОБАВИТЬ
+                    </button>
+                  </div>
+                </form>
             </div>
           </div>
         </div>
 
         <div class="task-progress">
           <div class="card-header card-header-progress">Список задач</div>
-          <div class="card text-dark bg-light mb-3">
-            <div class="card-body">
-              <div class="card-create-name">
-                <h5 class="card-create-title">Название</h5>
-              </div>
-              <div class="card-create-descr">
-                Задача: Мы вынуждены отталкиваться от того, что семантический разбор внешних противодействий однозначно определяет каждого участника как
-              </div>
-              <div class="card-btn">
-                <button class="card-btn-done">ГОТОВО</button>
-                <button class="card-btn-del">УДАЛИТЬ</button>
-              </div>
-            </div>
-          </div>
-          <div class="card text-dark bg-light mb-3">
-            <div class="card-body">
-              <div class="card-create-name">
-                <h5 class="card-create-title">Название</h5>
-              </div>
-              <div class="card-create-descr">
-                Задача: Мы вынуждены отталкиваться от того, что семантический разбор внешних противодействий однозначно определяет каждого участника как
-              </div>
-              <div class="card-btn">
-                <button class="card-btn-done">ГОТОВО</button>
-                <button class="card-btn-del">УДАЛИТЬ</button>
-              </div>
-            </div>
-          </div>
-          
-          
+
         </div>
         
         <div class="task-done">
           <div class="card-header card-header-progress">Выполненные задачи</div>
           <div class="card text-dark bg-light mb-3">
             <div class="card-body">
-              <div class="card-create-name">
-                <h5 class="card-create-title">Название</h5>
-              </div>
-              <div class="card-create-descr">
-                Задача: Мы вынуждены отталкиваться от того, что семантический разбор внешних противодействий однозначно определяет каждого участника как
-                
-              </div>
-              <div class="card-btn">
-                <button class="card-btn-del">УДАЛИТЬ</button>
-              </div>
-            </div>
-          </div>
-          <div class="card text-dark bg-light mb-3">
-            <div class="card-body">
-              <div class="card-create-name">
-                <h5 class="card-create-title">Название</h5>
-              </div>
-              <div class="card-create-descr">
-                Задача: Мы вынуждены отталкиваться от того, что семантический разбор внешних противодействий однозначно определяет каждого участника как
-              </div>
-              <div class="card-btn">
-                <button class="card-btn-del">УДАЛИТЬ</button>
-              </div>
+              <ul class="list-group">
+                <li class="list-group-item">
+                    <span class="card-create-title">Название</span>
+                    <p class="card-create-descr">
+                      Задача: Мы вынуждены отталкиваться от того, что семантический разбор внешних противодействий однозначно определяет каждого участника как
+                    </p>
+                    <div class="card-btn">
+                      <button class="card-btn-del">УДАЛИТЬ</button>
+                    </div>
+                </li>
+              </ul>
             </div>
           </div>
 
