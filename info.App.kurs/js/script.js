@@ -117,9 +117,9 @@ const tasks = [];
         const wrapBtn = document.createElement('div')
         wrapBtn.classList.add('card-btn')
 
-        const doneBtn = document.createElement('button');
-        doneBtn.textContent  = "ГОТОВО";
-        doneBtn.classList.add('card-btn-done');
+        // const doneBtn = document.createElement('button');
+        // doneBtn.textContent  = "ГОТОВО";
+        // doneBtn.classList.add('card-btn-done');
 
         const deleteBtn = document.createElement('button');
         deleteBtn.textContent  = "УДАЛИТЬ";
@@ -135,7 +135,7 @@ const tasks = [];
         li.appendChild(span);
         li.appendChild(article);
         li.appendChild(wrapBtn);
-        wrapBtn.appendChild(doneBtn);
+        // wrapBtn.appendChild(doneBtn);
         wrapBtn.appendChild(deleteBtn);
 
         return section;

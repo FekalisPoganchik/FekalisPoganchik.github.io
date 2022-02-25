@@ -2,7 +2,7 @@
     &-container { 
         margin: 60px 60px 0 60px;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-evenly;
     }
     .card {
         width: 450px;
@@ -52,19 +52,19 @@
         }
         &-btn {
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
             padding-top: 18px;
-            &-done {
-                padding: 7px 29.22px;
-                margin: 0;
-                font-weight: 300;
-                font-size: 20px;
-                line-height: 27px;  
-                background-color: $blue;
-                color: white;
-                border-radius: 20px;
-                border: none;
-            }
+            // &-done {
+            //     padding: 7px 29.22px;
+            //     margin: 0;
+            //     font-weight: 300;
+            //     font-size: 20px;
+            //     line-height: 27px;  
+            //     background-color: $blue;
+            //     color: white;
+            //     border-radius: 20px;
+            //     border: none;
+            // }
             &-del {
                 padding: 7px 23.29px;
                 margin: 0;
@@ -75,6 +75,7 @@
                 color: white;
                 border-radius: 20px;
                 border: none;
+                
             }
         }
     }
