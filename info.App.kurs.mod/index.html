@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Oswald:wght@300;400&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>Helper</title>
+</head>
+
+<body>
+  <div class="main-background">
+    <section class="menu">
+      <a id="logomainbtn" href=""><img src="image/Logo.png" alt="LOGO" class="menu-logo"></a>
+      <div class="menu-wrap">
+        <div class="menu-item"><a href="" id="mainbtn" class="menu-link linkDecoration">Расписание</a></div>
+        <div class="menu-item"><a href="" id="tasksbtn" class="menu-link">Задачи</a></div>
+        <div class="menu-item"><a href="" class="menu-link" id="newsbtn">Новости</a></div>
+      </div>
+      <a href="https://www.tyuiu.ru/"><img src="image/secLogo.png" alt="LOGO" class="menu-logoTIU"></a>
+    </section>
+    <section class="timetable show">
+      <div id="table"></div>
+    </section>
+    <section class="tasks hidden">
+      <div class="tasks-container">
+        <div class="tasks-create">
+          <div class="card text-dark bg-light mb-3">
+            <div class="card-header">Создание</div>
+            <div class="card-body">
+              <form name="addTask">
+                <h5 class="card-title">Заголовок задачи</h5>
+                <input type="text" name="title" id="title" class="tasks-input" rows="1" />
+                <h5 class="card-title">Описание задачи</h5>
+                <textarea type="text" name="body" id="body" class="tasks-input" rows="7"></textarea>
+                <div class="card-wrap">
+                  <button type="submit" class="card-wrap-name">
+                    ДОБАВИТЬ
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="task-progress">
+          <div class="card-header card-header-progress">Список задач</div>
+
+        </div>
+
+        <!-- <div class="task-done" id="asd">
+          <div class="card-header card-header-progress">Выполненные задачи</div>
+
+
+        </div>
+        </div> -->
+
+    </section>
+    <section class="news hidden">
+
+    </section>
+  </div>
+  <script type="text/javascript" src="js/bundle.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+</body>
+
+</html>

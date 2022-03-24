@@ -1,0 +1,92 @@
+.tasks {
+    &-container { 
+        margin: 60px 60px 0 60px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .card {
+        width: 450px;
+        opacity: 75%;
+        &-wrap {
+            text-align: center;
+            &-name {
+                padding: 7px 18px;
+                margin: 0;
+                font-weight: 300;
+                font-size: 20px;
+                line-height: 27px;  
+                background-color: $blue;
+                color: white;
+                border-radius: 20px;
+                border: none;
+            }
+        }
+        &-header{
+            background-color: $blue;
+            color: #FFFCFC;
+            text-align: center;
+            font-size: 40px;
+            padding: 0;
+            &-progress{
+                opacity: 75%;
+                width: 450px;
+            }
+        }
+        &-create {
+            &-descr {
+                font-size: 24px;
+                background-color: #e9e9f0;
+                padding: 10px;
+                margin-top: 24px;
+            }
+            &-title {
+                font-size: 34px;
+                font-weight: 300;
+                padding-bottom: 16px;
+            }
+        }
+        &-title {
+            font-weight: 300;
+            font-size: 34px;
+            line-height: 40px;
+        }
+        &-btn {
+            display: flex;
+            justify-content: center;
+            padding-top: 18px;
+            // &-done {
+            //     padding: 7px 29.22px;
+            //     margin: 0;
+            //     font-weight: 300;
+            //     font-size: 20px;
+            //     line-height: 27px;  
+            //     background-color: $blue;
+            //     color: white;
+            //     border-radius: 20px;
+            //     border: none;
+            // }
+            &-del {
+                padding: 7px 23.29px;
+                margin: 0;
+                font-weight: 300;
+                font-size: 20px;
+                line-height: 27px;  
+                background-color: #B01414;
+                color: white;
+                border-radius: 20px;
+                border: none;
+                
+            }
+        }
+    }
+    &-input {
+        resize: none;
+        width: 415px;
+        margin-bottom: 16px;
+    }
+    .list-group-item {
+        padding: 0;
+        border: none;
+        background-color: transparent;
+    }
+}

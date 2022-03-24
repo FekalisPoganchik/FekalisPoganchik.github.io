@@ -1,0 +1,24 @@
+@import 'base/variables';
+.show {
+    display: block!important;
+}
+.hidden {
+    display: none!important;
+}
+.linkDecoration {
+    color: $blue!important;
+    text-decoration: underline!important;
+}
+* {
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Oswald', sans-serif;
+}
+.main-background { 
+    background: url(../image/Background.jpg) center (center/cover) no-repeat;
+    min-height: 100vh;
+}
+
+@import 'blocks/header';
+@import 'blocks/main';
+@import 'blocks/tasks';
+
