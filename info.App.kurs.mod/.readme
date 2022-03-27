@@ -1,5 +1,0 @@
-npm i --legacy-peer-deps
-npm i -g pm2
-pm2 start ./api/api.js
-npm run build
-npm run watch
