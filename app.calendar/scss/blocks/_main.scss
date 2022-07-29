@@ -1,0 +1,77 @@
+.main {
+    .calendar {
+        .month {
+            display: flex;
+            align-items: center;
+            margin: 12px 0 12px 0;
+            .date {
+                margin: 0 0 0 40px;
+                font-size: 18px;
+                line-height: 21px;
+                position: absolute;
+            }
+            i {
+                width: 32px;
+                height: 24px;
+                box-shadow: inset 0px 0px 1px 1px rgba(0, 0, 0, 0.25);
+                border-radius: 4px;
+                border: 0.5px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 0 145px 0 0;
+                cursor: pointer;
+            }
+            img {
+                width: 12px;
+                height: 16px;
+            }
+        }
+        .today{
+            background-color: $neutral100;
+        }
+        #calendar {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            border-left: 1px solid $dark200;
+            border-top: 1px solid $dark200;
+            :hover {
+                background-color: $blue200;
+            }
+          }
+        .day {
+            border-bottom: 1px solid $dark200;
+            border-right: 1px solid $dark200;
+            text-align: center;
+            height: 103px;
+            font-size: 14px;
+            cursor: pointer;
+            transition: background-color 200ms, color 200ms;
+            text-align: initial;
+            padding: 8px;
+            .numberDay{
+                color: $dark100;
+                line-height: 1em;
+                font-size: 14px;
+            }
+            .title {
+                color: $dark200;
+                line-height: 1em;
+                margin-top: 8px;
+            }
+            .descr {
+                color: $dark100;
+                line-height: 1em;
+                margin-top: 8px;
+
+            }
+        }
+        .weekend {
+            color: $blue200;
+        }
+        .selected {
+            background-color: $blue200;
+            color: $light100;
+        }
+    }
+}
