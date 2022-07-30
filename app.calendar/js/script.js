@@ -92,8 +92,8 @@ const renderCalendar = () => {
                         <div class="descr"></div>
                     </div>`
         }
-        calendar.innerHTML = days
     }
+    calendar.innerHTML = days
 
     
 }
